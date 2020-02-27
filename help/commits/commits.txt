@@ -2,8 +2,8 @@
 02 - feature/média-escolar-dos-alunos
 03 - feature/classes-e-instâncias
 04 - feature/métodos-e-atributos
-05 - feature/
-06 - feature/
+05 - feature/construtores
+06 - feature/métodos-público-e-privado
 07 - feature/
 08 - feature/
 09 - feature/
