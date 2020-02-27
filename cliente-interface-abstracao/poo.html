@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema - Javascript API</title>
+</head>
+<body>
+	<!-- Interface e abbstração -->
+	<div id="resultado"></div>
+
+	<h1>Olá, desenvolvedor javascript!</h1><br><hr>
+	<h1>Programa em Javascript - Orientação a objetos</h1>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-interface-abstracao\abstracao.js"></script>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-interface-abstracao\pessoa.js"></script>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-interface-abstracao\cliente.js"></script>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-interface-abstracao\fornecedor.js"></script> 
+
+<script> 
+	//debugger
+	var p = new Pessoa();
+	p.nome = "Pessoa";
+	p.telefone = 66666666;
+	p.cpf = 99999999999;
+	debugger
+	p.GravarEmMemoria();
+	console.log(Pessoa.Base);
+
+	var f = new Fornecedor();
+	f.nome = "Fornecedor";
+	f.telefone = 66666666;
+	f.cpf = 99999999999;
+	f.GravarEmMemoria();
+	console.log(Fornecedor.Base);
+
+	var c = new Cliente();
+	c.nome = "Cliente";
+	c.telefone = 66666666;
+	c.cpf = 99999999999;
+	c.GravarEmMemoria();
+	console.log(Cliente.Base);
+
+	console.log("####################### Método da instância de Pessoa! #############");
+
+	p.Original();
+
+	console.log("####################################################################");
+	
+	//debugger	
+	console.log("####################### Método da instância de Cliente! ############");
+
+	c.Original();
+
+	console.log("####################################################################");
+
+</script>
+	
+</body>
+</html>
