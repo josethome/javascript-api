@@ -4,7 +4,7 @@
 04 - feature/métodos-e-atributos
 05 - feature/construtores
 06 - feature/métodos-público-e-privado
-07 - feature/
+07 - feature/herança
 08 - feature/
 09 - feature/
 10 - feature/
