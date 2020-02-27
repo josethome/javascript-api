@@ -1,3 +1,10 @@
 01 - feature/função-calcular-soma
 02 - feature/média-escolar-dos-alunos
-03 - 
+03 - feature/classes-e-instâncias
+04 - feature/métodos-e-atributos
+05 - feature/
+06 - feature/
+07 - feature/
+08 - feature/
+09 - feature/
+10 - feature/

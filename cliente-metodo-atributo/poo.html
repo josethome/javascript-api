@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema - Javascript API</title>
+</head>
+<body>
+	<div id="resultado"></div>
+
+	<h1>Olá, desenvolvedor javascript!</h1><br><hr>
+	<h1>Programa em Javascript - Orientação a objetos</h1>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-metodo-atributo\cliente.js"></script>
+
+<script>
+	var c = new Cliente();
+	c.nome = "José A. Thomé";
+	c.telefone = "(41) 99125-1316";
+	c.cpf = "999.999.999-99";
+	c.GravarEmMemoria();
+	//c.Mostrar();
+
+	//document.write("<hr>");
+
+	var c2 = new Cliente();
+	c2.nome = "Paula Troller";
+	c2.telefone = "(41) 993455-8392";
+	c2.cpf = "666.666.666-66";
+	c2.GravarEmMemoria();
+	//c2.Mostrar();
+	
+	Cliente.todos();
+
+</script>
+	
+</body>
+</html>
