@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema - Javascript API</title>
+</head>
+<body>
+	<h1>Olá, desenvolvedor javascript!</h1>
+
+	<script>
+		// Classes e instâncias
+		var Cliente = function() {
+			this.nome = "";
+			this.telefone = "";
+			this.cpf = "";
+
+			this.Mostar = function() {
+				alert("Nome: " + this.nome);
+				alert("Telefone: " + this.telefone);
+				alert("CPF: " + this.cpf);
+			}
+		}
+
+		var c = new Cliente();
+
+		c.Mostar();
+		c.nome = "Jose Thome";
+		c.telefone = "(41) 99125-1316";
+		c.cpf = "999.999.999-99";
+
+		var a = new Cliente();
+		a.nome = "Janaina";
+		a.telefone = "(41) 2222-2222";
+		a.cpf = "333.333.333-33";
+
+	</script>
+</body>
+</html>
