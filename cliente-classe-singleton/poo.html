@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema - Javascript API</title>
+</head>
+<body>
+	<!-- Classe singleton -->
+	<div id="resultado"></div>
+
+	<h1>Olá, desenvolvedor javascript!</h1><br><hr>
+	<h1>Exemplo classe singleton</h1>
+
+<script src="C:\wamp64\www\javascript-danilo\cliente-classe-singleton\classe-singleton.js"></script>
+<script>
+
+	console.log(Singleton);
+	console.log("================== Sem instância iniciada =================");
+
+	console.log(Singleton.instancia);	
+	Singleton.iniciar();
+
+	console.log("================== Com instância iniciada =================");
+	console.log(Singleton.instancia);
+
+	console.log("================== Alterrando o atributo nome =================");
+	Singleton.instancia.nome = "Jose";
+	console.log(Singleton.instancia.nome);
+
+	console.log("================== Alerta do método unitário da minha classe singleton =================");
+
+	Singleton.instancia.MostrarNaTela();
+	
+</script>
+	
+</body>
+</html>

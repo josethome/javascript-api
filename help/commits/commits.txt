@@ -7,4 +7,14 @@
 07 - feature/herança
 08 - feature/polimorfismo
 09 - feature/interface-abstração
-10 - feature/
+10 - feature/classe-singleton
+11 - feature/
+12 - feature/
+13 - feature/
+14 - feature/
+15 - feature/
+16 - feature/
+17 - feature/
+18 - feature/
+19 - feature/
+20 - feature/
