@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Tratamento de strings e regex</title>
+</head>
+<body>
+	<div id="texto">
+		Lorem Ipsum é simplemente uma simulação de texto da indústria tipográfica e de impressos, e em sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quasi, omnis placeat architecto officia neque, asperiores corporis provident. Ea, assumenda quibusdam eos pariatur aut! Eaque quam ea, provident maxime eligendi repudiandae quae. Quam nulla voluptate earum dicta illum eum eveniet nisi vitae possimus ea animi doloribus officia numquam tempore, facilis consequatur. Quod ipsam quo vel ratione molestiae quisquam nisi, sed officia sit. Deserunt veniam esse optio quia minus perspiciatis in laboriosam. Similique beatae ratione blanditiis maxime possimus quia veniam fuga.		
+	</div>	
+	<script>
+
+		// Procurando texto pelo indice "indexOf"
+		function procuraTexto() {			
+			var textoDigitado = prompt("Dígite o texto a ser procurado.");
+			var textoDiv = document.getElementById("texto").innerText;
+
+			if(textoDiv.indexOf(textoDigitado) == -1) {
+				alert("O texto que você procura não existe no arquivo!");
+			} else {
+				alert("O texto que você procura existe no arquivo!");
+			}
+		}
+		
+		// Dividindo o texto em um array "split"
+		function utilizandoSplit() {			
+			var arrayTextoSeparadoPorVirgula = textoDiv.split(",");
+			alert("A quantidade de frases separadas por vírgula é: " + 
+				arrayTextoSeparadoPorVirgula.length);
+		}
+		
+		// Retornando parte de um texto utilizando Regex(Regular expression)
+		function retornandoParteDoTexto() {			
+			alert(textoDiv.match(/da.*?I,/));
+			alert(textoDiv.match(/século.*?,/));
+		}
+
+		// Substitui um texto por outro
+		function alterandoTexto() {
+			var seculo = textoDiv.match(/século.*?,/);
+			//debugger
+			seculo = seculo.toString().replace(",", "");
+			alert(seculo);
+		}
+
+		function substituindoTexto() {
+			var sub = prompt("Dígite o texto a ser substituído");
+			var novoTexto = prompt("Dígite o novo texto");
+			document.getElementById("texto").innerText = textoDiv.replace(sub, novoTexto);
+
+			// Substituindo sem regex
+			document.getElementById("texto").innerText = textoDiv.replace(/é/, "eh");			
+		}
+		
+	</script>
+</body>
+</html>
