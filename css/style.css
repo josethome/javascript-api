@@ -1,0 +1,29 @@
+body {
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;		
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.home {
+	color: navy;
+	/*text-align: center;*/	
+	font-size: 40px;
+	text-transform: uppercase;
+	border-bottom: 4px solid navy;		
+}
+
+.conteudo {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.rodape {	
+	padding-bottom: 2px;
+ 	background-color: #ddd;
+}
