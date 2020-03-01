@@ -1,5 +1,5 @@
 body {
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;		
@@ -11,16 +11,15 @@ a {
 }
 
 .home {
-	color: navy;
-	/*text-align: rigth;*/	
+	color: navy;	
 	font-size: 40px;
 	text-transform: uppercase;
-	border-bottom: 4px solid navy;		
+	border-bottom: 4px solid navy;					
 }
 
 .conteudo {
 	margin-left: 40px;
-	margin-right: 40px;
+	margin-right: 40px;			
 }
 
 .rodape {	
@@ -61,4 +60,14 @@ a {
 
 a:hover {
 	background-color: #00a86b;
+}
+
+.cadastro {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.formulario {
+	margin-left: 40px;
+	margin-right: 40px;
 }

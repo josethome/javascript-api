@@ -28,8 +28,8 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum explicabo quos, possimus ad? <i>Temporibus</i> consectetur magni necessitatibus, ab vero et facere. Officiis, quae, dolore. A accusantium, animi laboriosam vel architecto!
 				</p>
-			</h3><br>
-			<hr>
+			</h3><br><hr>
+
 			<h3>Lista de linguagens de programação</h3>
 			<ul>
 				<li>HTML - Linguagem de marcação</li>
@@ -37,8 +37,8 @@
 				<li>JS   - Linguagem de script</li>
 				<li>PHP  - Linguagem de web</li>
 				<li>Java - Linguagem desktop</li>
-			</ul><br>
-			<hr>
+			</ul><br><hr>
+
 			<h3>Tabelas e colunas</h3>
 			<table border="2">
 				<tr style="font-weight: bold">
@@ -78,14 +78,82 @@
 		</div>
 
 		<div class="botao">
-			<a class="button" href="#">Faça seu orçamento sem compromisso</a>			
-		</div>
+			<a class="button" href="#">Faça seu orçamento sem compromisso</a>
+		</div><br>
 
+		<div class="cadastro">
+			<fieldset>
+				<legend>Cadastro de Clientes</legend>
+				<label for="nome">Nome:</label><br>
+				<input type="text" placeholder="Dígite seu nome completo"><br>
+				<label for="telefone">Telefone:</label><br>
+				<input type="text" placeholder="Dígite seu telefone"><br>
+				<label for="endereco">Endereço:</label><br>
+				<input type="text" placeholder="Dígite seu endereço"><br>
+				<label for="email">E-mail</label><br>
+				<input type="text" placeholder="Dígite seu e-mail"><br>	
+			</fieldset>	
+		</div><br>
+		
+		<div class="formulario">			
+			<!-- GET envia pequena qtde de dados passando parâmetros pela url -->
+			<form action="index.html" method="GET">
+
+			<!-- POST envia grande qtde de dados pela url de forma oculta --> 
+			<!-- <form action="index.html" method="POST"> -->
+				Nome: <input type="text" name="nome" />
+				<input type="submit" name="botao" value="Enviar" /><br><br>
+
+				Selecione uma opção: <br> 
+				Sim - <input type="radio" checked="checked" name="opcao" value="sim" />
+				Não - <input type="radio" name="opcao" value="nao" />
+				Talvez - <input type="radio" name="opcao" value="talvez" />
+				<input type="submit" name="botao" value="Enviar" /><br><br>
+
+				Checkbox: <br> 
+				Sim - <input type="checkbox" checked="checked" name="checar" value="1" />
+				Não - <input type="checkbox" name="checar" value="2" />
+				Talvez - <input type="checkbox" name="checar" value="3" /><br><br>
+				
+				<!-- Enviar dados escondidos - invísivel -->
+				<input type="hidden" name="escondido" value="Ola" />
+
+				Selecione: <br>
+				<select name="selecao" id="selecao-uf">
+					<option value="" selected="selected">[ Selecione ]</option>
+					<option value="1">Paraná</option>
+					<option value="2">Santa Catarina</option>
+					<option value="3">Rio Grande do Sul</option>
+					<option value="4">São Paulo</option>
+				</select><br><br>
+				Seleção múltipla: <br>
+				<select name="selecao-multipla" id="selecao-uf" multiple title="Use a tecla ctrl para fazer múltipla seleção">
+					<optgroup label="Região Sul">
+						<option value="1">Paraná</option>
+						<option value="2">Santa Catarina</option>
+						<option value="3">Rio Grande do Sul</option>
+					</optgroup>					
+					
+					<optgroup label="Região Sudeste">
+						<option value="4">São Paulo</option>
+						<option value="5">Rio de Janeiro</option>
+						<option value="6">Espirito Santo</option>
+					</optgroup>					
+				</select><br><br>
+
+				Assunto da mensagem: <br>
+				<textarea name="campo_texto" id="campo_texto" cols="90" rows="10" placeholder="Deixe aqui sua mensagem"></textarea><br>
+
+
+				<input type="submit" name="botao" value="Enviar" />
+			</form>
+		</div>		
+		
 		<div class="botao-topo">
 			<a href="#">
 				<img src="../images/votar-topo.png" title="Ir ao Topo" alt="botão-voltar-topo">	
 			</a>					
-		</div>		
+		</div>			
 		
 		<!-- Rodapé da página -->
 		<div class="rodape">			
